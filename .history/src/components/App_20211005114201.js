@@ -8,9 +8,8 @@ function App() {
       className='d-flex align-items-center justify-content-center'
       style={{ minHeight: '100vh' }}
     >
-      <div className='w-100' style={{ maxWidth: '400px' }}>
-        <Signup />
-      </div>
+      <div className='w-100'></div>
+      <Signup />
     </Container>
   );
 }
