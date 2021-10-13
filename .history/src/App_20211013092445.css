@@ -7,13 +7,6 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .top_nav {
   display: flex;
   flex-direction: row;
@@ -33,11 +26,15 @@
 
 .freshkeeper_header {
   position: static;
+  height: 61px;
+  left: 1px;
+  top: 17px;
 
   font-family: 'Pacifico', cursive;
-
+  font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 20px;
 
   display: flex;
   align-items: center;

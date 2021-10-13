@@ -11,8 +11,6 @@ import UpdateProfile from './UpdateProfile';
 import Storage from './Storage';
 import { AppWrap } from './appStyles';
 import Header from './header/header';
-import ShoppingList from './Shoppinglist';
-import AddItem from './AddItem';
 
 function App() {
   return (
@@ -22,14 +20,12 @@ function App() {
         className='d-flex align-items-center justify-content-center'
         // style={{ minHeight: '10vh' }}
       >
-        <div className='w-100' style={{ maxWidth: '400px' }}>
+        <div className='w-100' style={{ maxWidth: '200px' }}>
           <Router>
             <AuthProvider>
               <Switch>
-                <PrivateRoute exact path='/' component={Storage} />
                 <PrivateRoute path='/account' component={Account} />
-                <PrivateRoute path='/shoppinglist' component={ShoppingList} />
-                <PrivateRoute path='/additem' component={AddItem} />
+                <PrivateRoute exact path='/' component={Storage} />
                 <PrivateRoute
                   path='/update-profile'
                   component={UpdateProfile}

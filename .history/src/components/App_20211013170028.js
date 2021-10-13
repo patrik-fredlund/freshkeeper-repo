@@ -11,8 +11,7 @@ import UpdateProfile from './UpdateProfile';
 import Storage from './Storage';
 import { AppWrap } from './appStyles';
 import Header from './header/header';
-import ShoppingList from './Shoppinglist';
-import AddItem from './AddItem';
+import ShoppingList from './shoppinglist';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
                 <PrivateRoute exact path='/' component={Storage} />
                 <PrivateRoute path='/account' component={Account} />
                 <PrivateRoute path='/shoppinglist' component={ShoppingList} />
-                <PrivateRoute path='/additem' component={AddItem} />
                 <PrivateRoute
                   path='/update-profile'
                   component={UpdateProfile}

@@ -7,13 +7,6 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .top_nav {
   display: flex;
   flex-direction: row;
@@ -21,11 +14,11 @@
   align-items: center;
   padding: 14px 16px 14px 18px;
 
-  position: absolute;
-  width: 414px;
+  /* position: absolute; */
+  /* width: 414px;
   height: 65px;
   left: 0px;
-  top: 0px;
+  top: 0px; */
 
   background: #0e4462;
   border-radius: 4px;

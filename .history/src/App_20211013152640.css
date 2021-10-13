@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50%;
 }
 
 .top_nav {
@@ -32,7 +33,7 @@
 }
 
 .freshkeeper_header {
-  position: static;
+  /* position: static; */
 
   font-family: 'Pacifico', cursive;
 
