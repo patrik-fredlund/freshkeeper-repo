@@ -25,6 +25,7 @@ function App() {
       >
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Router>
+            <Navbar />
             <AuthProvider>
               <Switch>
                 <PrivateRoute exact path='/' component={Storage} />
@@ -39,7 +40,6 @@ function App() {
                 <Route path='/login' component={Login} />
                 <Route path='/forgot-password' component={ForgotPassword} />
               </Switch>
-              <Navbar />
             </AuthProvider>
           </Router>
         </div>

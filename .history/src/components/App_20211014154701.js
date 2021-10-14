@@ -27,7 +27,7 @@ function App() {
           <Router>
             <AuthProvider>
               <Switch>
-                <PrivateRoute exact path='/' component={Storage} />
+                <PrivateRoute path='/' component={Storage} />
                 <PrivateRoute path='/additem' component={AddItem} />
                 <PrivateRoute path='/shopinglist' component={ShopingList} />
                 <PrivateRoute path='/account' component={Account} />

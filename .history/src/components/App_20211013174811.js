@@ -13,7 +13,6 @@ import { AppWrap } from './appStyles';
 import Header from './header/header';
 import ShopingList from './Shopinglist';
 import AddItem from './AddItem';
-import Navbar from './navbar/Navbar';
 
 function App() {
   return (
@@ -28,9 +27,9 @@ function App() {
             <AuthProvider>
               <Switch>
                 <PrivateRoute exact path='/' component={Storage} />
-                <PrivateRoute path='/additem' component={AddItem} />
-                <PrivateRoute path='/shopinglist' component={ShopingList} />
                 <PrivateRoute path='/account' component={Account} />
+                <PrivateRoute path='/shopinglist' component={ShopingList} />
+                <PrivateRoute path='/additem' component={AddItem} />
                 <PrivateRoute
                   path='/update-profile'
                   component={UpdateProfile}
@@ -39,7 +38,6 @@ function App() {
                 <Route path='/login' component={Login} />
                 <Route path='/forgot-password' component={ForgotPassword} />
               </Switch>
-              <Navbar />
             </AuthProvider>
           </Router>
         </div>

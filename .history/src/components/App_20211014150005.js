@@ -39,8 +39,8 @@ function App() {
                 <Route path='/login' component={Login} />
                 <Route path='/forgot-password' component={ForgotPassword} />
               </Switch>
-              <Navbar />
             </AuthProvider>
+            <Navbar />
           </Router>
         </div>
       </Container>
