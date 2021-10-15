@@ -14,9 +14,11 @@ const Navbar = () => {
   });
 
   return (
-    <NavbarStyles>
-      <ul className='menu-list'>{menuList} </ul>
-    </NavbarStyles>
+    <HeaderWrap>
+      <nav>
+        <ul className='menu-list'>{menuList} </ul>
+      </nav>
+    </HeaderWrap>
   );
 };
 

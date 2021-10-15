@@ -15,7 +15,9 @@ const Navbar = () => {
 
   return (
     <NavbarStyles>
-      <ul className='menu-list'>{menuList} </ul>
+      <nav>
+        <ul className='menu-list'>{menuList} </ul>
+      </nav>
     </NavbarStyles>
   );
 };

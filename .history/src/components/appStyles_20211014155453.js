@@ -4,5 +4,6 @@ export const AppWrap = styled.div`
   /* display: flex;
   flex-flow: column; */
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid red;
+  text-decoration: none;
 `;
