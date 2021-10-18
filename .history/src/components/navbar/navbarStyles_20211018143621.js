@@ -7,8 +7,7 @@ export const NavbarStyles = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #0e4462;
-  padding-left: 10px;
-  padding-right: 10px;
+
   width: 100%;
   position: fixed;
   bottom: 0;

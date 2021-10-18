@@ -7,8 +7,8 @@ export const NavbarStyles = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #0e4462;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
+
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -22,7 +22,6 @@ export const NavbarStyles = styled.div`
   }
 
   a {
-    display: flex;
     color: #49beff;
     text-decoration: none;
     border: 1px solid blue;

@@ -8,10 +8,8 @@ const Navbar = () => {
   const menuList = MenuList.map(({ url, title, icon, index }) => {
     return (
       <li key={index}>
-        <div className='centerContainer'>
-          <a href={url}>{icon}</a>
-          <p className='navbarTitles'>{title}</p>
-        </div>
+        <a href={url}>{icon}</a>
+        <p className='navbarTitles'> {title}</p>
       </li>
     );
   });
