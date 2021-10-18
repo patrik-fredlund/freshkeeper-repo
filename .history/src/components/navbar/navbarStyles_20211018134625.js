@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const NavbarStyles = styled.div`
   border: 1px solid red;
   display: flex;
-
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #0e4462;
   padding: 20px;
 
+  z-index: 99;
+  margin: auto;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -17,17 +19,12 @@ export const NavbarStyles = styled.div`
     display: flex;
     list-style-type: none;
     border: 2px solid green;
-    width: 100%;
-    justify-content: space-between;
   }
 
   a {
     color: #49beff;
+
     text-decoration: none;
     border: 1px solid blue;
-  }
-
-  ul {
-    padding: 0;
   }
 `;

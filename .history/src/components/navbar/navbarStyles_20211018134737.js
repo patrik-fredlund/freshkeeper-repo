@@ -26,8 +26,4 @@ export const NavbarStyles = styled.div`
     text-decoration: none;
     border: 1px solid blue;
   }
-
-  ul {
-    padding: 0;
-  }
 `;

@@ -11,23 +11,18 @@ export const NavbarStyles = styled.div`
 
   width: 100%;
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
 
   .menu-list {
     display: flex;
     list-style-type: none;
     border: 2px solid green;
-    width: 100%;
-    justify-content: space-between;
   }
 
   a {
     color: #49beff;
+
     text-decoration: none;
     border: 1px solid blue;
-  }
-
-  ul {
-    padding: 0;
   }
 `;
