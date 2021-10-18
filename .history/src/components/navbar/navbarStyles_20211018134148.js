@@ -11,7 +11,6 @@ export const NavbarStyles = styled.div`
   position: relative;
   z-index: 99;
   margin: auto;
-  width: 100%;
 
   position: fixed;
   bottom: 0;

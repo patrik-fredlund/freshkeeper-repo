@@ -11,21 +11,16 @@ export const NavbarStyles = styled.div`
   position: relative;
   z-index: 99;
   margin: auto;
-  width: 100%;
-
-  position: fixed;
-  bottom: 0;
 
   .menu-list {
     display: flex;
     align-items: center;
     list-style-type: none;
-
+    width: 100%;
     border: 1px solid green;
     justify-content: space-between;
     max-width: 400px;
-    /* position: fixed;
-    bottom: 0; */
+    position: absolute;
 
     /* padding: 10px 10px; */
   }

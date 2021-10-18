@@ -44,8 +44,9 @@ function App() {
             </Router>
           </div>
         </Container>
+
+        <Navbar />
       </AppWrap>
-      <Navbar />
     </>
   );
 }

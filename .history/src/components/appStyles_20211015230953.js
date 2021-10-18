@@ -5,5 +5,4 @@ export const AppWrap = styled.div`
   flex-flow: column; */
   width: 100%;
   border: 1px solid green;
-  /* height: 400px; */
 `;
