@@ -7,8 +7,8 @@ export const NavbarStyles = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #0e4462;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   width: 100%;
   position: fixed;
@@ -19,7 +19,7 @@ export const NavbarStyles = styled.div`
     list-style-type: none;
     border: 2px solid green;
     width: 100%;
-    height: 75px;
+    height: 50px;
 
     justify-content: space-between;
   }
