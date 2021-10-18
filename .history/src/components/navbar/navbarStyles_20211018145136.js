@@ -34,7 +34,6 @@ export const NavbarStyles = styled.div`
 
   .navbarTitles {
     color: #49beff;
-    font-size: 12px;
   }
 
   ul {

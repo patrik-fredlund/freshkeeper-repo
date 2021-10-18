@@ -9,7 +9,6 @@ export const NavbarStyles = styled.div`
   background-color: #0e4462;
   padding-left: 10px;
   padding-right: 10px;
-
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -19,13 +18,12 @@ export const NavbarStyles = styled.div`
     list-style-type: none;
     border: 2px solid green;
     width: 100%;
-
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   a {
     display: flex;
-    padding-top: 10px;
     color: #49beff;
     text-decoration: none;
     border: 1px solid blue;
@@ -34,10 +32,10 @@ export const NavbarStyles = styled.div`
 
   .navbarTitles {
     color: #49beff;
-    font-size: 12px;
   }
 
   ul {
+    display: flex;
     padding: 0;
     margin: 0;
   }

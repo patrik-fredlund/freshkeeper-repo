@@ -18,7 +18,7 @@ export const MenuList = [
   },
   {
     title: 'Account',
-    icon: <Icon icon='ic:baseline-account-circle' width='30' height='30' />,
+    icon: <Icon icon='ic:baseline-account-circle' width='45' height='34' />,
     url: '/account',
   },
 ];

@@ -19,13 +19,13 @@ export const NavbarStyles = styled.div`
     list-style-type: none;
     border: 2px solid green;
     width: 100%;
+    margin-top: 10px;
 
     justify-content: space-between;
   }
 
   a {
     display: flex;
-    padding-top: 10px;
     color: #49beff;
     text-decoration: none;
     border: 1px solid blue;
@@ -34,7 +34,6 @@ export const NavbarStyles = styled.div`
 
   .navbarTitles {
     color: #49beff;
-    font-size: 12px;
   }
 
   ul {
