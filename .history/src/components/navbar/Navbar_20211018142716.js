@@ -9,8 +9,8 @@ const Navbar = () => {
     return (
       <li key={index}>
         <a href={url}>
-          {icon}
           {title}
+          {icon}
         </a>
       </li>
     );

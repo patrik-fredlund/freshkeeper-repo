@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 export const MenuList = [
   {
     title: 'Storage',
-    icon: <Icon icon='ic:baseline-playlist-add' width='55' height='34' />,
+    icon: <Icon icon='bx:bxs-fridge' width='40' height='34' />,
     url: '/',
   },
   {
@@ -13,12 +13,12 @@ export const MenuList = [
   },
   {
     title: 'ShopingList',
-    icon: <Icon icon='mdi:clipboard-text' width='65' height='34' />,
+    icon: <Icon icon='bx:bxs-fridge' width='40' height='34' />,
     url: '/shopinglist',
   },
   {
     title: 'Account',
-    icon: <Icon icon='ic:baseline-account-circle' width='45' height='34' />,
+    icon: <Icon icon='bx:bxs-fridge' width='40' height='34' />,
     url: '/account',
   },
 ];
