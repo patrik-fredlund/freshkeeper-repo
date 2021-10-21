@@ -55,27 +55,15 @@ export default function AddItem() {
         <div className='summary'>
           <div className='summary-item'>
             <div className='summary-title'>product</div>
-            <p className='summary-subtitel'>
-              <br />
-            </p>
           </div>
           <div className='summary-item'>
             <div className='summary-title'>storage</div>
-            <p className='summary-subtitel'>
-              <br />
-            </p>
           </div>
           <div className='summary-item'>
             <div className='summary-title'>date</div>
-            <p className='summary-subtitel'>
-              <br />
-            </p>
           </div>
           <div className='summary-item'>
             <div className='summary-title'>quantity</div>
-            <p className='summary-subtitel'>
-              <br />
-            </p>
           </div>
         </div>
         <div className='confirm'>
