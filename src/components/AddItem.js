@@ -25,17 +25,61 @@ export default function AddItem() {
             placeholder='Add product name'
           />
         </div>
+        <hr />
         <div className='addQuantityContainer'>
           <p className='mainNumber'>2</p>
           <h3 className='mainTitle'>Choose Quantity</h3>
+          <div className='counterContainer'>
+            <p className='minusBtn'>-</p>
+            <p className='counter'>5</p>
+            <p className='plusBtn'>+</p>
+          </div>
         </div>
+        <hr />
         <div className='addStorageContainer'>
           <p className='mainNumber'>3</p>
           <h3 className='mainTitle'>Choose Storage</h3>
+          <div className='storageContainer'>
+            <p className='fridge'>fridge</p>
+            <p className='freezer'>freezer</p>
+            <p className='pantry'>pantry</p>
+            <p className='custom'>custom</p>
+          </div>
         </div>
+        <hr />
         <div className='chooseDateContainer'>
           <p className='mainNumber'>4</p>
           <h3 className='mainTitle'>Choose Date</h3>
+        </div>
+        <hr />
+        <div className='summary'>
+          <div className='summary-item'>
+            <div className='summary-title'>product</div>
+            <p className='summary-subtitel'>
+              <br />
+            </p>
+          </div>
+          <div className='summary-item'>
+            <div className='summary-title'>storage</div>
+            <p className='summary-subtitel'>
+              <br />
+            </p>
+          </div>
+          <div className='summary-item'>
+            <div className='summary-title'>date</div>
+            <p className='summary-subtitel'>
+              <br />
+            </p>
+          </div>
+          <div className='summary-item'>
+            <div className='summary-title'>quantity</div>
+            <p className='summary-subtitel'>
+              <br />
+            </p>
+          </div>
+        </div>
+        <div className='confirm'>
+          <button>Confirm</button>
         </div>
       </AddItemStyle>
     </>
