@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Card, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { Link, useHistory } from 'react-router-dom';
-import { AppWrap } from './appStyles';
 import Header from './header/header';
-import GlobalStyle from './globalStyles';
+import { HeaderWrap } from './header/headerStyles';
 
 export default function Storage() {
   const [error, setError] = useState('');
@@ -22,14 +21,13 @@ export default function Storage() {
   }
 
   return (
-    <AppWrap>
-      <GlobalStyle />
+    <HeaderWrap>
       <h2 className='titleText'>Storage</h2>
       <p className='infoText'>
         This Is Your Storage. See All Items In Storage,<br></br> Or Sorted In
         Preferred Sections, Or Create A New Storage
       </p>
       <hr />
-    </AppWrap>
+    </HeaderWrap>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { AppWrap } from '../appStyles';
 import { HeaderWrap } from '../header/headerStyles';
 
 import { NavbarStyles } from './navbarStyles';

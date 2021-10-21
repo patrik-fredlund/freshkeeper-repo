@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Card, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { Link, useHistory } from 'react-router-dom';
-import { AppWrap } from './appStyles';
 import Header from './header/header';
-import GlobalStyle from './globalStyles';
+import { HeaderWrap } from './header/headerStyles';
 
 export default function ShoppingList() {
   const [error, setError] = useState('');
@@ -22,14 +21,15 @@ export default function ShoppingList() {
   }
 
   return (
-    <AppWrap>
-      <GlobalStyle />
-      <h2 className='titleText'>Shoppinglist</h2>
-      <p className='infoText'>
-        This is your shoppinglist. See all shoppinglist items,<br></br> or add
-        new catagoies.
-      </p>
-      <hr />
-    </AppWrap>
+    <>
+      <HeaderWrap>
+        <h2 className='titleText'>Shoppinglist</h2>
+        <h4 className='infoText'>
+          This is your shoppinglist. See all shoppinglist items,<br></br> or add
+          //new catagoies
+        </h4>
+        <hr />
+      </HeaderWrap>
+    </>
   );
 }
