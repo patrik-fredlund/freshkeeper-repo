@@ -25,6 +25,18 @@ export default function AddItem() {
             placeholder='Add product name'
           />
         </div>
+        <div className='addQuantityContainer'>
+          <p className='mainNumber'>2</p>
+          <h3 className='mainTitle'>Choose Quantity</h3>
+        </div>
+        <div className='addStorageContainer'>
+          <p className='mainNumber'>3</p>
+          <h3 className='mainTitle'>Choose Storage</h3>
+        </div>
+        <div className='chooseDateContainer'>
+          <p className='mainNumber'>4</p>
+          <h3 className='mainTitle'>Choose Date</h3>
+        </div>
       </AddItemStyle>
     </>
   );

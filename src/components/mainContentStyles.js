@@ -5,6 +5,7 @@ export const AddItemStyle = styled.div`
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding: 5px 10px;
   margin: auto;
@@ -46,5 +47,27 @@ export const AddItemStyle = styled.div`
     height: 41px;
     border-radius: 5px;
     padding: 0 20px;
+  }
+
+  .addQuantityContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+    margin-top: 20px;
+  }
+  .addStorageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+    margin-top: 20px;
+  }
+  .chooseDateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+    margin-top: 20px;
   }
 `;
