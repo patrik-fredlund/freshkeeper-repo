@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { Link, useHistory } from 'react-router-dom';
-import Header from './header/header';
+import Header from './header/Header';
 import { HeaderWrap } from './header/headerStyles';
 
 export default function ShoppingList() {

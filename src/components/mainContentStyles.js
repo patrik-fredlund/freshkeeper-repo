@@ -113,7 +113,7 @@ export const AddItemStyle = styled.div`
     text-align: center;
   }
 
-  .storageContainer {
+  .storages {
     display: flex;
     flex-direction: row;
     font-size: 12px;
@@ -182,15 +182,7 @@ export const AddItemStyle = styled.div`
     font-size: 14px;
     line-height: 30px;
   }
-  /* .summary-subtitel {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    color: #49beff;
-    text-transform: lowercase;
-  } */
+
   button {
     display: flex;
     /* flex-direction: column; */
