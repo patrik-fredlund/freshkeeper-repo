@@ -8,6 +8,7 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import TextField from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import moment from 'moment';
 
 export default function AddItem() {
   const [text, setText] = useState('');
@@ -91,6 +92,10 @@ export default function AddItem() {
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>date</div>
+                <p className='summary-subtitel'>
+                  {day ? moment(day).endOf('day').fromNow() : null}
+                  <br />
+                </p>
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>quantity</div>
