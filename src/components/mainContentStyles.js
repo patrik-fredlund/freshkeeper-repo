@@ -78,6 +78,8 @@ export const AddItemStyle = styled.div`
     font-family: 'inter';
   }
 
+  //-----------choose quantity styles-----------//
+
   .counterContainer {
     display: flex;
     flex-direction: row;
@@ -114,6 +116,8 @@ export const AddItemStyle = styled.div`
     border-radius: 50%;
     text-align: center;
   }
+
+  //---------------choose storage styles------------------//
 
   .storages {
     display: flex;
@@ -166,45 +170,7 @@ export const AddItemStyle = styled.div`
     /* margin-left: 20px; */
   }
 
-  .summary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
-    height: 65px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-  }
-  .summary-item {
-    margin: auto;
-  }
-  .summary-title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  button {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    margin: 5px auto;
-    margin-top: 20px;
-    padding: 14px 12px 14px 12px;
-    width: 300px;
-    height: 50px;
-    border: #ffffff;
-    background: #49beff;
-    color: #ffffff;
-    border-radius: 4px;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 25px;
-  }
+  //---------choose date styles-------------//
 
   .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
     display: flex;
@@ -238,5 +204,53 @@ export const AddItemStyle = styled.div`
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     cursor: pointer;
     text-align: center;
+  }
+
+  //------------------summary styles---------------------//
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    height: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .summary-item {
+    margin: auto;
+  }
+  .summary-title {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .summary-subtitel {
+    color: #49beff;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    padding: 14px 12px 14px 12px;
+    width: 300px;
+    height: 50px;
+    border: #ffffff;
+    background: #49beff;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
   }
 `;
