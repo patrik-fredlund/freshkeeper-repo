@@ -13,9 +13,24 @@ import moment from 'moment';
 export default function AddItem() {
   const [text, setText] = useState('');
   const [day, setDay] = useState(null);
+  const [quantity, setQuantity] = useState(0);
 
   const handleDate = (date) => {
     setDay(date);
+  };
+
+  const handleMinus = (e) => {
+    e.preventDefault();
+    setQuantity(parseInt(quantity) - 1);
+  };
+
+  const handlePlus = (e) => {
+    e.preventDefault();
+    setQuantity(parseInt(quantity) + 1);
+  };
+
+  const handleQuantity = (e) => {
+    setQuantity(e.target.value);
   };
 
   return (
@@ -28,7 +43,7 @@ export default function AddItem() {
         <hr />
       </HeaderWrap>
       <AddItemStyle>
-        {/* --------------------välj produkt--------------------------- */}
+        {/* --------------------Add Item--------------------------- */}
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <form>
             <div className='addItemContainer'>
@@ -43,18 +58,32 @@ export default function AddItem() {
                 autoFocus
               />
             </div>
-
             <hr />
+            {/* --------------------Choose Quantity--------------------------- */}
             <div className='addQuantityContainer'>
               <p className='mainNumber'>2</p>
               <h3 className='mainTitle'>Choose Quantity</h3>
               <div className='counterContainer'>
-                <p className='minusBtn'>-</p>
-                <p className='counter'>5</p>
-                <p className='plusBtn'>+</p>
+                <button className='minusBtn' onClick={handleMinus}>
+                  -
+                </button>
+                <input
+                  className='counter'
+                  type='number'
+                  min={0}
+                  max={1000}
+                  precision={2}
+                  step={0.1}
+                  value={quantity}
+                  onChange={handleQuantity}
+                />
+                <button className='plusBtn' onClick={handlePlus}>
+                  +
+                </button>
               </div>
             </div>
             <hr />
+            {/* --------------------Choose Storage--------------------------- */}
             <div className='addStorageContainer'>
               <p className='mainNumber'>3</p>
               <h3 className='mainTitle'>Choose Storage</h3>
@@ -66,7 +95,7 @@ export default function AddItem() {
               </div>
             </div>
             <hr />
-            {/* ---------------------Välj dag-------------------------- */}
+            {/* ---------------------Choose date-------------------------- */}
             <div className='chooseDateContainer'>
               <p className='mainNumber'>4</p>
               <h3 className='mainTitle'>Choose Date</h3>
