@@ -46,6 +46,8 @@ export const AddItemStyle = styled.div`
     margin-top: -20px;
   }
 
+  //---------Add Item Page--------------//
+
   .searchBar {
     font-weight: 300;
     font-size: 12px;
@@ -189,17 +191,52 @@ export const AddItemStyle = styled.div`
     align-items: center;
     justify-content: center;
     margin: 5px auto;
+    margin-top: 20px;
     padding: 14px 12px 14px 12px;
     width: 300px;
-    height: 40px;
+    height: 50px;
     border: #ffffff;
     background: #49beff;
     color: #ffffff;
     border-radius: 4px;
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
+    line-height: 25px;
+  }
+
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    display: flex;
+    margin: auto;
+    width: 276px;
+    height: 41px;
+  }
+
+  .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
     line-height: 20px;
+    margin: auto;
+    display: flex;
+    background: rgba(17, 169, 255, 0.12);
+    border: 1px solid #49beff;
+    border-radius: 5px;
+    width: 276px;
+    height: 41px;
+    cursor: pointer;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    cursor: pointer;
+    text-align: center;
   }
 `;

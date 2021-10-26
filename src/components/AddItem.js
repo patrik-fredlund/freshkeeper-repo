@@ -89,6 +89,8 @@ export default function AddItem() {
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>storage</div>
+                <p className='summary-subtitel'>frys</p>
+                <br />
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>date</div>
@@ -99,6 +101,8 @@ export default function AddItem() {
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>quantity</div>
+                <p className='summary-subtitel'>5l</p>
+                <br />
               </div>
             </div>
             <div className='confirm'>
