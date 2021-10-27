@@ -14,6 +14,7 @@ export default function AddItem() {
   const [text, setText] = useState('');
   const [day, setDay] = useState(null);
   const [quantity, setQuantity] = useState(0);
+  const [unit, setUnit] = useState('');
 
   const handleDate = (date) => {
     setDay(date);
@@ -31,6 +32,10 @@ export default function AddItem() {
 
   const handleQuantity = (e) => {
     setQuantity(e.target.value);
+  };
+
+  const handleUnit = (e) => {
+    setUnit(e.target.value);
   };
 
   return (
@@ -80,6 +85,19 @@ export default function AddItem() {
                 <button className='plusBtn' onClick={handlePlus}>
                   +
                 </button>
+                <select
+                  placeholder='Choose quantity'
+                  className='select-input'
+                  onChange={handleUnit}
+                  value={unit}
+                >
+                  <option hidden>...</option>
+                  <option value='kg'>kg</option>
+                  <option value='g'>g</option>
+                  <option value='Liter'>L</option>
+                  <option value='ml'>ml</option>
+                  <option value='pcs'>pcs</option>
+                </select>
               </div>
             </div>
             <hr />
@@ -130,8 +148,10 @@ export default function AddItem() {
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>quantity</div>
-                <p className='summary-subtitel'>5l</p>
-                <br />
+                <p className='summary-subtitel'>
+                  {quantity} {unit}
+                  <br />
+                </p>
               </div>
             </div>
             <div className='confirm'>

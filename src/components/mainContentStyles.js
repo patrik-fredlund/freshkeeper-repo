@@ -65,12 +65,7 @@ export const AddItemStyle = styled.div`
     align-items: center;
     font-family: 'inter';
   }
-  .addStorageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'inter';
-  }
+
   .chooseDateContainer {
     display: flex;
     flex-direction: column;
@@ -95,6 +90,8 @@ export const AddItemStyle = styled.div`
     border-radius: 50%;
     text-align: center;
     margin-right: 20px;
+    color: black;
+    background-color: white;
   }
   .plusBtn {
     font-weight: 700;
@@ -105,6 +102,8 @@ export const AddItemStyle = styled.div`
     border-radius: 50%;
     text-align: center;
     margin-left: 20px;
+    color: black;
+    background-color: white;
   }
   .counter {
     font-weight: 700;
@@ -117,58 +116,95 @@ export const AddItemStyle = styled.div`
     text-align: center;
   }
 
+  .select-input {
+    position: fixed;
+
+    border-radius: 8px;
+    background: #49beff;
+    border: 2px solid #49beff;
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 20px;
+    width: 50px;
+    margin-left: 200px;
+  }
+
   //---------------choose storage styles------------------//
+
+  .addStorageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+  }
 
   .storages {
     display: flex;
-    flex-direction: row;
     font-size: 12px;
   }
 
   .fridge {
-    border: 1px solid #49beff;
+    border: 2px solid #49beff;
     line-height: 62px;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     text-align: center;
-  }
-  .fridge {
-    border: 1px solid #49beff;
-    line-height: 62px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    text-align: center;
-    /* margin-left: 20px; */
   }
   .freezer {
-    border: 1px solid #49beff;
+    border: 2px solid #49beff;
     line-height: 62px;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     text-align: center;
-    /* margin-left: 20px; */
+    margin: 0 10px 0 10px;
   }
   .pantry {
-    border: 1px solid #49beff;
+    border: 2px solid #49beff;
     line-height: 62px;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     text-align: center;
-    /* margin-left: 20px; */
+    margin: 0 10px 0 0;
   }
   .custom {
-    border: 1px solid #49beff;
+    border: 2px solid #49beff;
     line-height: 62px;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     text-align: center;
-    /* margin-left: 20px; */
   }
+
+  /* .storages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    height: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .storage-options label {
+    margin: auto 5px;
+    width: 76px;
+    height: 76px;
+    padding-top: 8px;
+    border-radius: 100vw;
+    border: 2px solid #49beff;
+    text-align: center;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+  }
+  input:active + label {
+    background-color: #49beff;
+  }
+  .storage-options input[type="radio"] {
+    display: none;
+  } */
 
   //---------choose date styles-------------//
 
