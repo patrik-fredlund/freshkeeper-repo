@@ -133,53 +133,6 @@ export const AddItemStyle = styled.div`
 
   .addStorageContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'inter';
-  }
-
-  .storages {
-    display: flex;
-    font-size: 12px;
-  }
-
-  .fridge {
-    border: 2px solid #49beff;
-    line-height: 62px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    text-align: center;
-  }
-  .freezer {
-    border: 2px solid #49beff;
-    line-height: 62px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    text-align: center;
-    margin: 0 10px 0 10px;
-  }
-  .pantry {
-    border: 2px solid #49beff;
-    line-height: 62px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    text-align: center;
-    margin: 0 10px 0 0;
-  }
-  .custom {
-    border: 2px solid #49beff;
-    line-height: 62px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    text-align: center;
-  }
-
-  /* .storages {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
@@ -188,23 +141,25 @@ export const AddItemStyle = styled.div`
     right: 0px;
     bottom: 0px;
   }
-  .storage-options label {
+
+  .storages {
+    font-size: 12px;
+
     margin: auto 5px;
-    width: 76px;
-    height: 76px;
+    width: 68px;
+    height: 68px;
     padding-top: 8px;
     border-radius: 100vw;
     border: 2px solid #49beff;
     text-align: center;
-    letter-spacing: 0.025em;
     cursor: pointer;
   }
   input:active + label {
     background-color: #49beff;
   }
-  .storage-options input[type="radio"] {
+  .storages input[type='radio'] {
     display: none;
-  } */
+  }
 
   //---------choose date styles-------------//
 

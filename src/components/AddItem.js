@@ -132,9 +132,9 @@ export default function AddItem() {
             </div>
             <hr />
             {/* --------------------Choose Storage--------------------------- */}
-            <div className='storages'>
+            <div className='addStorageContainer '>
               {storages.map((storage) => (
-                <div className='storage-options' key={storage}>
+                <div className='storages' key={storage}>
                   <input
                     className={storage}
                     type='radio'
