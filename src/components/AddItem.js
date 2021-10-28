@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { Card, Button, Alert } from 'react-bootstrap';
-import { useAuth } from '../context/AuthContext';
-import { Link, useHistory } from 'react-router-dom';
 import { HeaderWrap } from './header/headerStyles';
 import { AddItemStyle } from './mainContentStyles';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
@@ -9,12 +6,20 @@ import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import TextField from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import moment from 'moment';
+import { Icon } from '@iconify/react';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 
 export default function AddItem() {
   const [text, setText] = useState('');
   const [day, setDay] = useState(null);
   const [quantity, setQuantity] = useState(0);
   const [unit, setUnit] = useState('');
+  const [storage, setStorage] = useState('');
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState(false);
+
+  const storages = ['Freezer', 'Fridge', 'Pantry'];
 
   const handleDate = (date) => {
     setDay(date);
@@ -22,7 +27,9 @@ export default function AddItem() {
 
   const handleMinus = (e) => {
     e.preventDefault();
-    setQuantity(parseInt(quantity) - 1);
+    if (quantity > 0) {
+      setQuantity(parseInt(quantity) - 1);
+    }
   };
 
   const handlePlus = (e) => {
@@ -38,6 +45,29 @@ export default function AddItem() {
     setUnit(e.target.value);
   };
 
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setOpen(false);
+    setMessage(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage(true);
+  };
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant='filled' {...props} />;
+  });
+
+  const icons = [
+    { storage: 'Freezer', icon: 'ph:thermometer-cold' },
+    { storage: 'Fridge', icon: 'bx:bx-fridge' },
+    { storage: 'Pantry', icon: 'carbon:wheat' },
+  ];
+
   return (
     <>
       <HeaderWrap>
@@ -50,7 +80,7 @@ export default function AddItem() {
       <AddItemStyle>
         {/* --------------------Add Item--------------------------- */}
         <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='addItemContainer'>
               <p className='mainNumber'>1</p>
               <h3 className='mainTitle'>Add product name</h3>
@@ -94,7 +124,7 @@ export default function AddItem() {
                   <option hidden>...</option>
                   <option value='kg'>kg</option>
                   <option value='g'>g</option>
-                  <option value='Liter'>L</option>
+                  <option value='liter'>L</option>
                   <option value='ml'>ml</option>
                   <option value='pcs'>pcs</option>
                 </select>
@@ -102,15 +132,27 @@ export default function AddItem() {
             </div>
             <hr />
             {/* --------------------Choose Storage--------------------------- */}
-            <div className='addStorageContainer'>
-              <p className='mainNumber'>3</p>
-              <h3 className='mainTitle'>Choose Storage</h3>
-              <div className='storages'>
-                <p className='fridge'>fridge</p>
-                <p className='freezer'>freezer</p>
-                <p className='pantry'>pantry</p>
-                <p className='custom'>custom</p>
-              </div>
+            <div className='storages'>
+              {storages.map((storage) => (
+                <div className='storage-options' key={storage}>
+                  <input
+                    className={storage}
+                    type='radio'
+                    id={storage}
+                    name='storage'
+                    value={storage}
+                    onChange={(e) => setStorage(e.target.value)}
+                  />
+                  <label for={storage}>
+                    <Icon
+                      icon={icons.find((i) => i.storage === storage).icon}
+                      width='31'
+                      height='31'
+                    />
+                    {storage}
+                  </label>
+                </div>
+              ))}
             </div>
             <hr />
             {/* ---------------------Choose date-------------------------- */}
@@ -136,7 +178,7 @@ export default function AddItem() {
               </div>
               <div className='summary-item'>
                 <div className='summary-title'>storage</div>
-                <p className='summary-subtitel'>frys</p>
+                <p className='summary-subtitel'>{storage}</p>
                 <br />
               </div>
               <div className='summary-item'>
@@ -149,14 +191,38 @@ export default function AddItem() {
               <div className='summary-item'>
                 <div className='summary-title'>quantity</div>
                 <p className='summary-subtitel'>
-                  {quantity} {unit}
+                  {quantity === 0 ? ' ' : quantity} {unit}
                   <br />
                 </p>
               </div>
             </div>
             <div className='confirm'>
-              <button>Confirm</button>
+              <button type='submit'>Confirm</button>
             </div>
+            {/* Snackbar */}
+
+            <Snackbar
+              open={open}
+              autoHideDuration={3000}
+              onClose={handleClose}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+            >
+              <Alert onClose={handleClose} severity='info'>
+                Please fill in all fields!
+              </Alert>
+            </Snackbar>
+            <Snackbar
+              open={message}
+              autoHideDuration={3000}
+              onClose={handleClose}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+            >
+              <Alert onClose={handleClose} severity='success'>
+                Item added !
+              </Alert>
+            </Snackbar>
+
+            {/* Snackbar */}
           </form>
         </LocalizationProvider>
       </AddItemStyle>
