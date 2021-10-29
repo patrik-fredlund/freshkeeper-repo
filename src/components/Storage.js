@@ -58,16 +58,6 @@ export default function Storage() {
               if (item.storage === storage) {
                 return (
                   <li key={item.id}>
-                    {/* <div className='item-name'>{item.name}</div>{' '}
-                    <p>
-                      <div className='line'></div>
-                      <div>
-                        {item.quantity}
-                        {item.unit} <div className='line'></div> {item.expiry}{' '}
-                      </div>
-                      <div className='line'></div>
-                    </p> */}
-
                     <div className='item-info'>
                       <p> {item.name}</p>
                       <div className='line'></div>
