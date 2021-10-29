@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-
-import Header from './header/Header';
+import React from 'react';
 import { HeaderWrap } from './header/headerStyles';
+import { StoragePageStyle } from './mainContentStyles';
 
-const storages = ['Freezer', 'Fridge', 'Pantry'];
+const storages = ['Fridge', 'Freezer', 'Pantry'];
+
 const items = [
   {
     id: 1,
@@ -49,28 +49,39 @@ export default function Storage() {
         </p>
         <hr />
       </HeaderWrap>
-      <div>
-        {storages.map((storage) => (
+      <StoragePageStyle>
+        <div className='allStoredItems'>All Stored Items</div>
+        {storages.map((storage, i) => (
           <div>
             <div className={storage}>{storage}</div>
             {items.map((item) => {
               if (item.storage === storage) {
                 return (
                   <li key={item.id}>
-                    <div className='item-name'>{item.name}</div>{' '}
+                    {/* <div className='item-name'>{item.name}</div>{' '}
                     <p>
                       <div className='line'></div>
-                      {item.quantity}
-                      {item.unit} <div className='line'></div> {item.expiry}{' '}
-                      <div className='line'></div>{' '}
-                    </p>
+                      <div>
+                        {item.quantity}
+                        {item.unit} <div className='line'></div> {item.expiry}{' '}
+                      </div>
+                      <div className='line'></div>
+                    </p> */}
+
+                    <div className='item-info'>
+                      <p> {item.name}</p>
+                      <div className='line'></div>
+                      {item.quantity} {item.unit} <div className='line'></div>
+                      {item.expiry}
+                      <div className='line'></div>
+                    </div>
                   </li>
                 );
               }
             })}
           </div>
         ))}
-      </div>
+      </StoragePageStyle>
     </>
   );
 }

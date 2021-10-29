@@ -245,3 +245,74 @@ export const AddItemStyle = styled.div`
     line-height: 25px;
   }
 `;
+
+export const StoragePageStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  text-decoration: none;
+
+  .allStoredItems {
+    background-color: #49beff;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+  }
+  .Fridge {
+    border: 1px solid black;
+    background-color: #a5c9ff;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+    padding: 12px 0px 12px 14px;
+  }
+  .Freezer {
+    border: 1px solid black;
+    background-color: #73abff;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+    padding: 12px 0px 12px 14px;
+  }
+
+  .Pantry {
+    border: 1px solid black;
+    background-color: #ffe1d5;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+    padding: 12px 0px 12px 14px;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: row;
+    color: green;
+    border: 1px solid green;
+    align-items: center;
+    background-color: #d5e4fb;
+  }
+  .line {
+    width: 1px;
+    height: 30px;
+    background-color: black;
+    margin: 2px 10px;
+  }
+
+  p {
+    display: flex;
+    color: red;
+    text-decoration: none;
+    align-items: center;
+    margin: 0 8px;
+    padding: 12px 0px 12px 5px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+`;
