@@ -259,6 +259,8 @@ export const StoragePageStyle = styled.div`
     height: 45px;
     left: 0px;
     top: 216px;
+    padding: 12px 0px 12px 14px;
+    margin-top: 5px;
   }
   .Fridge {
     background-color: #a5c9ff;
@@ -321,5 +323,60 @@ export const StoragePageStyle = styled.div`
 
   .item {
     color: red;
+  }
+`;
+
+//----------------shoppinglist page------------------//
+
+export const ShoppinglistStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  .allShoppingListItems {
+    background-color: #e5cab0;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+    padding: 12px 0px 12px 14px;
+    margin-top: 5px;
+  }
+  .shop-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #d5e4fb;
+    width: 414px;
+    height: 45px;
+    left: 0px;
+    top: 216px;
+    padding: 12px 0px 12px 14px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+
+  .item {
+    color: #11a9ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .quatnity {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    color: black;
+    margin-left: 12px;
+  }
+
+  .line {
+    border: 1px solid grey;
+    display: flex;
+    margin-left: 15px;
+  }
+
+  .arrow {
+    margin-left: 200px;
   }
 `;

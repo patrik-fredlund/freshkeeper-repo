@@ -1,24 +1,18 @@
 import React, { useState } from 'react';
-import { Card, Button, Alert } from 'react-bootstrap';
-import { useAuth } from '../context/AuthContext';
-import { Link, useHistory } from 'react-router-dom';
-import Header from './header/Header';
 import { HeaderWrap } from './header/headerStyles';
+import { ShoppinglistStyle } from './mainContentStyles';
+import { Icon } from '@iconify/react';
+// import Accordion from '@mui/material/Accordion';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+// import AccordionDetails from '@mui/material/AccordionDetails';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 export default function ShoppingList() {
-  const [error, setError] = useState('');
-  const { currentUser, logout } = useAuth();
-  const history = useHistory();
+  const [open, setOpen] = useState(true);
 
-  async function handleLogOut() {
-    setError('');
-    try {
-      await logout();
-      history.push('/login');
-    } catch {
-      setError('failed to log out');
-    }
-  }
+  const handleToggle = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
@@ -30,6 +24,32 @@ export default function ShoppingList() {
         </h4>
         <hr />
       </HeaderWrap>
+      <ShoppinglistStyle>
+        <div className='allShoppingListItems'>
+          All Shoppinglist Items
+          {/* <button onClick={handleToggle}>open</button> */}
+          {/* <svg data-testid='KeyboardArrowRightIcon'></svg> */}
+          <Icon
+            className='arrow'
+            onClick={handleToggle}
+            icon='dashicons:arrow-right-alt2'
+          />
+        </div>
+        {open ? (
+          !false
+        ) : (
+          <div className='shop-item'>
+            <div className='item'>
+              Milk
+              <div className='line'></div>
+              <p className='quatnity'>
+                <b>1</b>&nbsp;liter
+              </p>
+              <div className='line'></div>
+            </div>
+          </div>
+        )}
+      </ShoppinglistStyle>
     </>
   );
 }
