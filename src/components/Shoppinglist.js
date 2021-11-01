@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { HeaderWrap } from './header/headerStyles';
 import { ShoppinglistStyle } from './mainContentStyles';
 import { Icon } from '@iconify/react';
-// import Accordion from '@mui/material/Accordion';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function ShoppingList() {
   const [open, setOpen] = useState(true);
@@ -25,30 +25,36 @@ export default function ShoppingList() {
         <hr />
       </HeaderWrap>
       <ShoppinglistStyle>
-        <div className='allShoppingListItems'>
-          All Shoppinglist Items
-          {/* <button onClick={handleToggle}>open</button> */}
-          {/* <svg data-testid='KeyboardArrowRightIcon'></svg> */}
-          <Icon
-            className='arrow'
-            onClick={handleToggle}
-            icon='dashicons:arrow-right-alt2'
-          />
-        </div>
-        {open ? (
-          !false
-        ) : (
-          <div className='shop-item'>
-            <div className='item'>
-              Milk
-              <div className='line'></div>
-              <p className='quatnity'>
-                <b>1</b>&nbsp;liter
-              </p>
-              <div className='line'></div>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <div className='allShoppingListItems'>
+              All Shoppinglist Items
+              {/* <button onClick={handleToggle}>open</button> */}
+              {/* <svg data-testid='KeyboardArrowRightIcon'></svg> */}
+              <Icon
+                className='arrow'
+                onClick={handleToggle}
+                icon='dashicons:arrow-right-alt2'
+              />
             </div>
-          </div>
-        )}
+          </AccordionSummary>
+          {open ? (
+            !false
+          ) : (
+            <AccordionDetails>
+              <div className='shop-item'>
+                <div className='item'>
+                  Milk
+                  <div className='line'></div>
+                  <p className='quatnity'>
+                    <b>1</b>&nbsp;liter
+                  </p>
+                  <div className='line'></div>
+                </div>
+              </div>
+            </AccordionDetails>
+          )}
+        </Accordion>
       </ShoppinglistStyle>
     </>
   );

@@ -250,8 +250,12 @@ export const AddItemStyle = styled.div`
 
 export const StoragePageStyle = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  text-decoration: none;
+  width: 100%;
+  padding: 5px 10px;
+  margin: auto;
+  max-width: 400px;
 
   .allStoredItems {
     background-color: #49beff;
@@ -299,6 +303,12 @@ export const StoragePageStyle = styled.div`
     align-items: center;
     background-color: #d5e4fb;
     margin-top: 5px;
+
+    width: 414px;
+    height: 45px;
+
+    top: 216px;
+    padding: 12px 0px 12px 14px;
   }
   .line {
     width: 1px;
@@ -330,8 +340,12 @@ export const StoragePageStyle = styled.div`
 
 export const ShoppinglistStyle = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  text-decoration: none;
+  width: 100%;
+  padding: 5px 10px;
+  margin: auto;
+  max-width: 400px;
 
   .allShoppingListItems {
     background-color: #e5cab0;
