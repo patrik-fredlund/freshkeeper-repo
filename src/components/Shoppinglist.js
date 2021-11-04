@@ -25,35 +25,35 @@ export default function ShoppingList() {
         <hr />
       </HeaderWrap>
       <ShoppinglistStyle>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <div className='allShoppingListItems'>
-              All Shoppinglist Items
-              {/* <button onClick={handleToggle}>open</button> */}
-              {/* <svg data-testid='KeyboardArrowRightIcon'></svg> */}
-              <Icon
+        <p className='all-items'>All Shoppinglist Items</p>
+        {/* <Icon
                 className='arrow'
                 onClick={handleToggle}
                 icon='dashicons:arrow-right-alt2'
-              />
+              /> */}
+        <Accordion className='accordion'>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            {/* <div className='shop-item'> */}
+            <div className='item'>
+              <p>Milk</p>
+              <div className='line'></div>
+              <p className='quatnity'>
+                <b>1</b>&nbsp;liter
+              </p>
+              <div className='line'></div>
             </div>
+            {/* </div> */}
+            {/* </div> */}
           </AccordionSummary>
-          {open ? (
+          {/* {open ? (
             !false
-          ) : (
-            <AccordionDetails>
-              <div className='shop-item'>
-                <div className='item'>
-                  Milk
-                  <div className='line'></div>
-                  <p className='quatnity'>
-                    <b>1</b>&nbsp;liter
-                  </p>
-                  <div className='line'></div>
-                </div>
-              </div>
-            </AccordionDetails>
-          )}
+          ) : ( */}
+
+          <AccordionDetails className='shop-detials'>
+            <button>add to cart</button>
+            <button>delete</button>
+          </AccordionDetails>
+          {/* )} */}
         </Accordion>
       </ShoppinglistStyle>
     </>

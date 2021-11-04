@@ -251,9 +251,11 @@ export const AddItemStyle = styled.div`
 export const StoragePageStyle = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 5px 10px;
+  padding: 5px 0;
+
   margin: auto;
   max-width: 400px;
 
@@ -339,27 +341,27 @@ export const StoragePageStyle = styled.div`
 //----------------shoppinglist page------------------//
 
 export const ShoppinglistStyle = styled.div`
-  display: flex;
+  /*   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   padding: 5px 10px;
-  margin: auto;
-  max-width: 400px;
-
+  margin: auto; */
   .allShoppingListItems {
-    background-color: #e5cab0;
-    width: 414px;
-    height: 45px;
-    left: 0px;
-    top: 216px;
+    /*     width: 100%;
     padding: 12px 0px 12px 14px;
     margin-top: 5px;
+    margin: 8px 0px; */
+  }
+  .all-items {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5cab0;
+    padding: 12px 0px 12px 14px;
   }
   .shop-item {
+    background-color: #d5e4fb;
     display: flex;
     flex-direction: row;
-    background-color: #d5e4fb;
     width: 414px;
     height: 45px;
     left: 0px;
@@ -367,6 +369,7 @@ export const ShoppinglistStyle = styled.div`
     padding: 12px 0px 12px 14px;
     margin-top: 5px;
     justify-content: left;
+    /* border: 1px solid red; */
   }
 
   .item {
@@ -387,10 +390,39 @@ export const ShoppinglistStyle = styled.div`
   .line {
     border: 1px solid grey;
     display: flex;
-    margin-left: 15px;
+    margin-left: 25px;
+    height: 20px;
   }
 
   .arrow {
     margin-left: 200px;
+  }
+
+  /* .accordion {
+    width: 100%;
+    align-items: left;
+    padding-left: 14px;
+    list-style: none;
+    margin: 8px 0px;
+    background-color: #e5cab0;
+    height: 51px;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .Mui-expanded {
+    margin: 0px;
+  }
+
+  .shop-detials {
+  } */
+
+  .accordion {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #d5e4fb;
+    height: 45px;
   }
 `;
