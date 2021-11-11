@@ -31,7 +31,7 @@ Det funkar på följande sätt:
 1. Registrera råvarorna i appen och sätt ett bäst-före-datum på dem.
 2. Få en påminnelse när datumet börjar närma sig.
 
-Ytligare funktioner.
+Yttligare funktioner.
 
 - Välj vilket LAGRUNGSUTRYMME du vill lagra specifik vara. Kyl, frys eller skafferi.
 - När varan börjar ta slut, lägg till den i INLÖPSLISTAN, och använd denna lista nästa gång du handlar.
@@ -56,7 +56,7 @@ Denna app har massa utvecklings-potential.
 t.ex:
 
 1.  Den viktigaste funktionen i appen är att lägga till en vara, och den behöver vara smidig och så enkel att göra som möjligt.
-    Idag gör mat manuellt.
+    Idag gör man det manuellt.
     I utvecklingssyfte skulle nästa steg kunna vara:
     - Scanna av streckkoden från förpackningar och på så sätt registrera bäst-före-datumet på produkterna. Det skulle förenkla tillvägagångssättet rejält, eftersom det då sker automatiskt med hjälp av scanna av streckkoden.
     - Ett annat sätt skulle kunna vara att man talar in informationen (produkt, antal och datum) och på så sätt registrerar varan med sin röst.
@@ -67,7 +67,7 @@ t.ex:
     Dessutom var det något målgruppen nämnde under vårt ux-arbete att dom skulle uppskatta att kunna göra.
     Man skulle även kunna dela upp inköpslistor i oilka delar beroende på t.ex vem varorna gäller eller var dom köps.
 
-3. En annan sak vi lärde oss under målgruppsanalysen var att användaren gärna har ytligare information/content som t.ex recept-tips, eller    hållbarhetstips i appen och på så sätt bidra med mer värde till användaren. Så nåogt annat man skulle kunna skapa är recepttips beroende på vilken/vilka typ av produkt/er som finns tillhands. På så sätt får man tips och inspiration om vad man skulle kunna laga för mat, med dom produkter man har hemma, och måste använda innan dom går ut.
+3. En annan sak vi lärde oss under målgruppsanalysen var att användaren gärna har yttligare information/content som t.ex recept-tips, eller hållbarhetstips i appen och på så sätt bidra med mer värde till användaren. Så nåogt annat man skulle kunna skapa är recepttips beroende på vilken/vilka typ av produkt/er som finns tillhands. På så sätt får man tips och inspiration om vad man skulle kunna laga för mat med dom produkter man har hemma, innan dom går ut.
 
 
 
