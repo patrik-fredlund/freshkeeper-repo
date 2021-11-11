@@ -9,6 +9,9 @@
 - Add products to your storage of choice.
 - Then add food to your shoppinglist.
 
+## Demo
+:link: https://www.figma.com/proto/zWpKIvm4yNpET9vncWsbE3/Matsvinn_skiss_prototyp?page-id=0%3A1&node-id=18%3A43&starting-point-node-id=18%3A43
+
 
 ## :bulb: Credits
 
