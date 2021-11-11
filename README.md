@@ -5,9 +5,11 @@
 
  ## :seedling: Introduction
   
-blabla
+- Keep track on your foods expiration date.
+- Add products to your storage of choice.
+- Then add food to your shoppinglist.
 
-## :crown: Keep track on your foods expiration date. Add products to your storage of choice. Then add food to your shoppinglist.
+## :crown: 
 blablabla
 
 ## :tada: Key Features
