@@ -4,11 +4,11 @@
 </p>
 
  ## :seedling: Fetures
-  <p align="center">
-- Keep track on your foods expiration date.
-- Add products to your storage of choice.
-- Then add food to your shoppinglist.
-</p>
+ 
+:boom: Keep track on your foods expiration date.
+:boom: Add products to your storage of choice.
+:boom: Then add food to your shoppinglist.
+
 ## :crown: 
 blablabla
 
