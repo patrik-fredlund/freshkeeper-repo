@@ -20,5 +20,54 @@ https://freshkeeper_patrik.surge.sh/
 
 
 
+## Argument
+
+KORT OM APPEN.
+Detta är en app som underlättar för användaren att äta sin inköpta mat innan den går ut,
+och på så sätt spara pengar och samtidigt värna om miljön.
+
+Det funkar på följande sätt:
+
+1. Registrera råvarorna i appen och sätt ett bäst-före-datum på dem.
+2. Få en påminnelse när datumet börjar närma sig.
+
+Ytligare funktioner.
+
+- Välj vilket LAGRUNGSUTRYMME du vill lagra specifik vara. Kyl, frys eller skafferi.
+- När varan börjar ta slut, lägg till den i INLÖPSLISTAN, och använd denna lista nästa gång du handlar.
+
+Jag valde att göra min app i react eftersom det är det ramverk/bibilotek vi använt oss av i utbildningen, så jag ville utveckla mina kunskaper där.
+Det första jag gjorde var att skapa inlogning med firebase.
+Det kändes som rätt väg att gå. Inte bara för att det var första delen av appen man kommer till vid start, men också för att det var något av det svårare funktionerna att skapa.
+Jag följde denna tutorial som var tydlig och nogrann:
+https://www.youtube.com/watch?v=PKwu15ldZ7k
+
+Sen för resten av appen så följde jag framförallt denna tutorial:
+https://www.youtube.com/playlist?list=PLt4757glfbhGMJ9LxziIBKkUVAKQoVHn6
+Men såklart även andra tutorials, plus massa google, stack overflow mm.
+
+Jag valde sedan att hårdkoda stora delar av appen.
+Till nästa version vill jag utveckla appen från hårdkodad till att lagra användares värden i en databas. Då har jag tänkt att använda mig av firestore.
+
+## Utvecklings-potetial
+
+Denna app har massa utvecklings-potential.
+
+t.ex:
+
+1.  Den viktigaste funktionen i appen är att lägga till en vara, och den behöver vara smidig och så enkel att göra som möjligt.
+    Idag gör mat manuellt.
+    I utvecklingssyfte skulle nästa steg kunna vara:
+    - Scanna av streckkoden från förpackningar och på så sätt registrera bäst-före-datumet på produkterna. Det skulle förenkla tillvägagångssättet rejält, eftersom det då sker automatiskt med hjälp av scanna av streckkoden.
+    - Ett annat sätt skulle kunna vara att man talar in informationen (produkt, antal och datum) och på så sätt registrerar varan med sin röst.
+
+2.  En annan sak vi redan under research-arbetet pratade om var att kunna skapa egna underkategorier.
+    på så sätt kan man dela upp produkterna på fler olika platser, som kylen i källaren, Patriks vinkällare eller Mattes choklad.
+    Det skulle en intressant väg att gå.
+    Dessutom var det något målgruppen nämnde under vårt ux-arbete att dom skulle uppskatta att kunna göra.
+    Man skulle även kunna dela upp inköpslistor i oilka delar beroende på t.ex vem varorna gäller eller var dom köps.
+
+3. En annan sak vi lärde oss under målgruppsanalysen var att användaren gärna har ytligare information/content som t.ex recept-tips, eller    hållbarhetstips i appen och på så sätt bidra med mer värde till användaren. Så nåogt annat man skulle kunna skapa är recepttips beroende på vilken/vilka typ av produkt/er som finns tillhands. På så sätt får man tips och inspiration om vad man skulle kunna laga för mat, med dom produkter man har hemma, och måste använda innan dom går ut.
+
 
 
