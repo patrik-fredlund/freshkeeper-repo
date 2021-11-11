@@ -2,6 +2,8 @@ import React from 'react';
 import { HeaderWrap } from './header/headerStyles';
 import { StoragePageStyle } from './mainContentStyles';
 
+//----------------------Arrays----------------------//
+
 const storages = ['Fridge', 'Freezer', 'Pantry'];
 
 const items = [

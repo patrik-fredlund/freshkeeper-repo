@@ -8,7 +8,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function ShoppingList() {
+  //----------------------States----------------------//
+
   const [open, setOpen] = useState(true);
+  //----------------------Functions----------------------//
 
   const handleToggle = () => {
     setOpen(!open);
@@ -26,32 +29,35 @@ export default function ShoppingList() {
       </HeaderWrap>
       <ShoppinglistStyle>
         <p className='all-items'>All Shoppinglist Items</p>
-        {/* <Icon
-                className='arrow'
-                onClick={handleToggle}
-                icon='dashicons:arrow-right-alt2'
-              /> */}
-        <Accordion className='accordion'>
+
+        <Accordion className='item'>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            {/* <div className='shop-item'> */}
-            <div className='item'>
-              <p>Milk</p>
+            <p>Milk</p>
+            <div className='item-info'>
               <div className='line'></div>
               <p className='quatnity'>
                 <b>1</b>&nbsp;liter
               </p>
               <div className='line'></div>
             </div>
-            {/* </div> */}
-            {/* </div> */}
           </AccordionSummary>
-          {/* {open ? (
-            !false
-          ) : ( */}
 
-          <AccordionDetails className='shop-detials'>
-            <button>add to cart</button>
-            <button>delete</button>
+          <AccordionDetails>
+            <div className='item-details'>
+              <button className='item-details-button'>
+                <Icon
+                  icon='ic:baseline-delete-forever'
+                  width='32'
+                  height='32'
+                />{' '}
+                delete
+              </button>
+
+              <button className='item-details-button'>
+                <Icon icon='bx:bxs-edit' width='32' height='32' />
+                Edit
+              </button>
+            </div>
           </AccordionDetails>
           {/* )} */}
         </Accordion>

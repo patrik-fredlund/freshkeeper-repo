@@ -1,6 +1,4 @@
 import React from 'react';
-import { HeaderWrap } from '../header/headerStyles';
-
 import { NavbarStyles } from './navbarStyles';
 import { Icon } from '@iconify/react';
 import { NavLink } from 'react-router-dom';

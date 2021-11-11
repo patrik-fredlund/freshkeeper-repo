@@ -1,3 +1,6 @@
+// Det här är min main css fil, där allt main-content stylas.
+//Header och navbar stylas i separata filer i sina respektive folders.
+
 import styled from 'styled-components';
 
 export const AddItemStyle = styled.div`
@@ -36,7 +39,6 @@ export const AddItemStyle = styled.div`
     text-align: center;
     margin-right: 300px;
     margin-bottom: 0;
-    /* position: absolute; */
   }
 
   .mainTitle {
@@ -300,15 +302,12 @@ export const StoragePageStyle = styled.div`
   .item-info {
     display: flex;
     flex-direction: row;
-
-    /* border: 1px solid green; */
     align-items: center;
     background-color: #d5e4fb;
     margin-top: 5px;
 
     width: 414px;
     height: 45px;
-
     top: 216px;
     padding: 12px 0px 12px 14px;
   }
@@ -341,18 +340,6 @@ export const StoragePageStyle = styled.div`
 //----------------shoppinglist page------------------//
 
 export const ShoppinglistStyle = styled.div`
-  /*   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 5px 10px;
-  margin: auto; */
-  .allShoppingListItems {
-    /*     width: 100%;
-    padding: 12px 0px 12px 14px;
-    margin-top: 5px;
-    margin: 8px 0px; */
-  }
   .all-items {
     font-family: 'Roboto', sans-serif;
     background-color: #e5cab0;
@@ -369,52 +356,100 @@ export const ShoppinglistStyle = styled.div`
     padding: 12px 0px 12px 14px;
     margin-top: 5px;
     justify-content: left;
-    /* border: 1px solid red; */
+  }
+
+  .item-name {
+    color: #11a9ff;
+  }
+  .item-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  .item-details-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #11a9ff;
+    background: #ffffff;
+    color: black;
+    width: 70px;
+    height: 70px;
+    margin: 0px 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    padding: 4px;
+    transition: 0.2s ease-out;
+  }
+  .item-details-button:active {
+    background: #49beff;
   }
 
   .item {
-    color: #11a9ff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .quatnity {
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-    color: black;
-    margin-left: 12px;
-  }
-
-  .line {
-    border: 1px solid grey;
-    display: flex;
-    margin-left: 25px;
-    height: 20px;
-  }
-
-  .arrow {
-    margin-left: 200px;
-  }
-
-  /* .accordion {
     width: 100%;
     align-items: left;
     padding-left: 14px;
     list-style: none;
-    margin: 8px 0px;
-    background-color: #e5cab0;
-    height: 51px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 700;
     font-size: 20px;
-  }
-  .Mui-expanded {
-    margin: 0px;
+    background: #d5e4fb;
+    margin: 8px 0px;
   }
 
-  .shop-detials {
-  } */
+  .item p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14;
+    margin-right: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+  }
+  .item-info {
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .line {
+    width: 1px;
+    height: 30px;
+    background-color: black;
+    margin: 2px 10px;
+  }
+
+  .css-acap47-MuiAlert-message {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    padding-left: 30px;
+    width: 300px;
+  }
+  .css-secft3-MuiPaper-root-MuiAlert-root,
+  .css-16sd9zo-MuiPaper-root-MuiAlert-root {
+    height: 50px;
+    width: 300px;
+    position: fixed;
+    bottom: 10%;
+  }
+  .MuiAccordionSummary-content {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+  }
 
   .accordion {
     display: flex;

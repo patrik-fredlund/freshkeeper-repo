@@ -11,6 +11,8 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 
 export default function AddItem() {
+  //----------------------States----------------------//
+
   const [text, setText] = useState('');
   const [day, setDay] = useState(null);
   const [quantity, setQuantity] = useState(0);
@@ -18,8 +20,9 @@ export default function AddItem() {
   const [storage, setStorage] = useState('');
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState(false);
-
   const storages = ['Freezer', 'Fridge', 'Pantry'];
+
+  //----------------------Functions----------------------//
 
   const handleDate = (date) => {
     setDay(date);
@@ -168,6 +171,8 @@ export default function AddItem() {
             </div>
 
             <hr />
+            {/* ---------------------Summary-------------------------- */}
+
             <div className='summary'>
               <div className='summary-item'>
                 <div className='summary-title'>product</div>
@@ -199,6 +204,7 @@ export default function AddItem() {
             <div className='confirm'>
               <button type='submit'>Confirm</button>
             </div>
+
             {/* Snackbar */}
 
             <Snackbar
@@ -221,8 +227,6 @@ export default function AddItem() {
                 Item added !
               </Alert>
             </Snackbar>
-
-            {/* Snackbar */}
           </form>
         </LocalizationProvider>
       </AddItemStyle>
