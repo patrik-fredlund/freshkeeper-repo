@@ -3,7 +3,7 @@
 <p align="center"> A project by <a href="https://github.com/patrik-fredlund">Patrik Fredlund</a> •
 </p>
 
-## :tada: Key Features
+## Key Features
  
 - Keep track on your foods expiration date.
 - Add products to your storage of choice.
@@ -18,7 +18,7 @@
 ## Demo
 https://freshkeeper_patrik.surge.sh/
 
-## :bulb: Credits
+
 
 
 
