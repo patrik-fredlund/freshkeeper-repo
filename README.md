@@ -7,7 +7,7 @@
   
 blabla
 
-## :crown: Make note-taking great again
+## :crown: Keep track on your foods expiration date. Add products to your choosen storage. Then add food to your shoppinglist.
 blablabla
 
 ## :tada: Key Features
